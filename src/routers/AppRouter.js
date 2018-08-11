@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const AppRouter = () => (
   <BrowserRouter>
-    <div>
+    <span>
       <Header />
       <Switch>
         <Route path='/' component={Main} exact={true} />
@@ -20,7 +20,7 @@ const AppRouter = () => (
         <Route path='/contact' component={Contact} />
         <Route component={NotFound} />
       </Switch>
-    </div>
+    </span>
   </BrowserRouter>
 );
 
