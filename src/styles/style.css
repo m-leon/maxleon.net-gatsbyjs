@@ -14,11 +14,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, a:visited {
-  color: #9BB8C5;
+  color: #96B0CB;
   text-decoration: none;
 }
 
-header {
+#contact__header {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#contact__form input, #contact__form textarea {
+  background: #E5E7E8;
+  border: none;
+  display: block;
+  outline: none;
+  padding: 1rem;
+  width: 50%;
+}
+
+#contact__form input:focus, #contact__form textarea:focus,
+#contact__form input:hover, #contact__form textarea:hover {
+  background: #D6D6D6;
+}
+
+#contact__form textarea {
+  resize: none;
+}
+
+#header {
   height: 25vh;
 }
 
@@ -26,7 +49,7 @@ header {
 }
 
 @media (min-width: 1000px) {
-  header {
+  #header {
     min-height: 150px;
   }
 }
