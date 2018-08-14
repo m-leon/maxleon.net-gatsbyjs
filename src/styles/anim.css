@@ -7,13 +7,13 @@
 }
 
 .logoDraw {
-  fill-opacity: 0;
-  animation-timing-function: ease-in-out;
+  animation-delay: 0s, 2.5s, 2.5s;
+  animation-duration: 3s, 1s, 1s;
   animation-fill-mode: forwards;
   animation-iteration: 1;
   animation-name: DrawLine, FadeStroke, FillIn;
-  animation-duration: 3s, 1s, 1s;
-  animation-delay: 0s, 2.5s, 2.5s;
+  animation-timing-function: ease-in-out;
+  fill-opacity: 0;
   stroke-dashArray: 1100;
   stroke-dashoffset: 1100;
 }

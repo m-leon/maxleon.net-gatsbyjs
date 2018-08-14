@@ -1,0 +1,9 @@
+.content {
+  display: block;
+}
+
+.content__header {
+  font-weight: 300;
+  margin: 0;
+  text-transform: uppercase;
+}

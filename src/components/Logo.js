@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/anim.css';
 
 const Logo = () => (
   <div>
@@ -14,7 +13,7 @@ const Logo = () => (
         />
       </defs>
     </svg>
-    <svg id='logo'>
+    <svg id='logo' viewBox='0 0 350 312'>
       <use className='logoDraw' href="#logoM" />
     </svg>
   </div>

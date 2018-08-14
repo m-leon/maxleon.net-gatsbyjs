@@ -1,0 +1,21 @@
+#contact__form {
+  width: 50%;
+}
+
+#contact__form input, #contact__form textarea {
+  background: #E5E7E8;
+  border: none;
+  display: block;
+  outline: none;
+  padding: 1rem;
+  width: 100%;
+}
+
+#contact__form input:focus, #contact__form textarea:focus,
+#contact__form input:hover, #contact__form textarea:hover {
+  background: #D6D6D6;
+}
+
+#contact__form textarea {
+  resize: none;
+}
