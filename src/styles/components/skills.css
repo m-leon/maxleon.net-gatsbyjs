@@ -1,0 +1,25 @@
+#skills__content {
+  width: 50%;
+}
+
+#skills__list {
+  font-size: 2.5rem;
+  height: 300px;
+  line-height: 1.7;
+  list-style: none;
+  min-width: 200px;
+  overflow: hidden;
+  text-align: center;
+  width: 25%;
+}
+
+#skills__list > li {
+  animation: skillsScroll 25s linear infinite;
+}
+
+@keyframes skillsScroll {
+  100% {
+    /* calc(line height * font size * amount of (unique) items in skills list) */
+    transform: translate3d(0vw, calc(-1 * 1.7 * 2.5rem * 33), 0px);
+  }
+}

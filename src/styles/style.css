@@ -1,8 +1,9 @@
 @import url('./_base.css');
 @import url('./_settings.css');
-@import url('./anim.css');
 
 @import url('./components/_base.css');
 @import url('./components/contact.css');
 @import url('./components/header.css');
+@import url('./components/logo.css');
 @import url('./components/main.css');
+@import url('./components/skills.css');

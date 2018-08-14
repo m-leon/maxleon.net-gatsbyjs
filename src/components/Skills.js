@@ -3,43 +3,54 @@ import React from 'react';
 const Skills = () => (
   <div className='content'>
     <h2 className='content__header'>my expertises</h2>
-    HTML 5
-    CSS 3
-    SCSS
-
-    Javascript
-    ES6
-    Jest
-    React
-    React Native
-    Redux
-    Yarn
-    NodeJS
-    Webpack
-
-    PHP
-    PHPUnit
-    Composer
-    Laravel
-    Lumen
-    Grav
-    Wordpress
-
-    MySQL
-    MariaDB
-    MongoDB
-
-    AWS
-    S3
-    Lambda
-
-    Nginx
-    Apache
-    SSH
-    Git
-    Linux
-    Debian
-    CentOS/RedHat
+    <div id='skills__content'>
+      <p>I’m always in pursuit of the latest technologies that will allow me to create, design, optimize, and perfect my projects</p>
+    </div>
+    <ul id='skills__list'>
+      <li>HTML 5</li>
+      <li>CSS 3</li>
+      <li>SCSS</li>
+      <li>Javascript</li>
+      <li>ES6</li>
+      <li>Jest</li>
+      <li>React</li>
+      <li>React Native</li>
+      <li>Redux</li>
+      <li>Yarn</li>
+      <li>NodeJS</li>
+      <li>Webpack</li>
+      <li>PHP</li>
+      <li>PHPUnit</li>
+      <li>Composer</li>
+      <li>Laravel</li>
+      <li>Lumen</li>
+      <li>Grav</li>
+      <li>Wordpress</li>
+      <li>MySQL</li>
+      <li>MariaDB</li>
+      <li>MongoDB</li>
+      <li>AWS</li>
+      <li>S3</li>
+      <li>Lambda</li>
+      <li>Nginx</li>
+      <li>Apache</li>
+      <li>SSH</li>
+      <li>Git</li>
+      <li>Linux</li>
+      <li>Debian</li>
+      <li>CentOS</li>
+      <li>RedHat</li>
+      { /* Purposely loop items for smooth animation */ }
+      <li>HTML 5</li>
+      <li>CSS 3</li>
+      <li>SCSS</li>
+      <li>Javascript</li>
+      <li>ES6</li>
+      <li>Jest</li>
+      <li>React</li>
+      <li>React Native</li>
+      <li>Redux</li>
+    </ul>
   </div>
 );
 
