@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const otherPages = [<Link to='/skills'>my skills</Link>];
+const otherPages = [ <a href='https://github.com/m-leon'>my GitHub</a>, <Link to='/skills'>my skills</Link>];
 
 const NotFound = () => (
   <div className='content'>
