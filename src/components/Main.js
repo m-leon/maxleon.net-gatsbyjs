@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Main = () => (
-  <div className='page__content'>
-    <p>I’m <span>Max Leon</span>, a full-stack web developer from California</p>
-    <p>
+  <div className='content'>
+    <p id='main__tagline'>I’m <span id='main__name'>Max Leon</span>, a web developer from California.</p>
+    <span id='main__links'>
       <a href='https://github.com/m-leon'>GitHub</a> &bull; <a href='mailto:max@maxleon.net'>email</a>
-    </p>
+    </span>
   </div>
 );
 
