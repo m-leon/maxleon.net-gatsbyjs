@@ -1,0 +1,32 @@
+#logo {
+  fill: #2396A7;
+  fill: url("#logoGradient");
+  stroke: #2396A7;
+  stroke-miterlimit: 5;
+  height: 200px;
+}
+
+.logoDraw {
+  fill-opacity: 0;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration: 1;
+  animation-name: DrawLine, FadeStroke, FillIn;
+  animation-duration: 3s, 1s, 1s;
+  animation-delay: 0s, 2.5s, 2.5s;
+  stroke-dashArray: 1100;
+  stroke-dashoffset: 1100;
+}
+
+@keyframes DrawLine {
+  to { stroke-dashOffset: 0; }
+}
+
+@keyframes FadeStroke {
+  to { stroke-opacity: 0; }
+}
+
+@keyframes FillIn {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 1; }
+}

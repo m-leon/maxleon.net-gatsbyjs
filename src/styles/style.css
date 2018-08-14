@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -14,12 +18,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, a:visited {
-  color: #96B0CB;
+  color: #2396A7;
+  outline: none;
   text-decoration: none;
 }
 
-#contact__header {
+.page__content {
+  display: block;
+}
+
+.page__header {
   font-weight: 300;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -42,14 +52,37 @@ a, a:visited {
 }
 
 #header {
+  display: flex;
   height: 25vh;
+  justify-content: space-between;
+  min-height: 220px;
+  padding: 0 2rem;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+#header__logo {
+  width: 50%;
 }
 
 #header__links {
+  font-size: 2rem;
+  text-align: right;
+  width: 50%;
+}
+
+#header__links a {
+  display: block;
+  padding-top: 1rem;
 }
 
 @media (min-width: 1000px) {
   #header {
-    min-height: 150px;
+  }
+
+  #header__links a {
+    display: inline;
+    padding-right: 1rem;
+    padding-top: 0;
   }
 }

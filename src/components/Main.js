@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Main = () => (
-  <div>
+  <div className='page__content'>
     <p>I’m <span>Max Leon</span>, a full-stack web developer from California</p>
-    <a>LinkedIn</a><a>GitHub</a><a>email link</a>
+    {/*<a>LinkedIn</a>*/}<a href='https://github.com/m-leon'>GitHub</a> &bull; <a href='mailto:max@maxleon.net'>email</a>
   </div>
 );
 

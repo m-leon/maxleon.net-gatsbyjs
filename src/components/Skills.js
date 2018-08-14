@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Skills = () => (
-  <div>
+  <div className='page__content'>
+    <h2 className='page__header'>skills</h2>
     HTML 5
     CSS 3
 

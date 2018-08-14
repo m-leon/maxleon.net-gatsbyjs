@@ -1,8 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import Logo from './Logo';
+
 const Header = () => (
   <header id='header'>
+    <div id='header__logo'>
+      <Logo />
+    </div>
     <div id='header__links'>
       <NavLink to='/' activeClassName='is-active' exact={true}>max</NavLink>
       <NavLink to='/skills' activeClassName='is-active'>skills</NavLink>
