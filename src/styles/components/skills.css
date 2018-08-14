@@ -1,4 +1,6 @@
 #skills__content {
+  font-size: 1.9rem;
+  line-height: 1.8;
   width: 50%;
 }
 
@@ -19,6 +21,6 @@
 @keyframes skillsScroll {
   100% {
     /* calc(line height * font size * amount of (unique) items in skills list) */
-    transform: translate3d(0vw, calc(-1 * 1.7 * 2.5rem * 33), 0px);
+    transform: translate3d(0vw, calc(-1 * 1.7 * 2.5rem * 35), 0px);
   }
 }

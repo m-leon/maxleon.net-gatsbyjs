@@ -15,6 +15,7 @@ const Skills = () => (
       <li>Jest</li>
       <li>React</li>
       <li>React Native</li>
+      <li>MobX</li>
       <li>Redux</li>
       <li>Yarn</li>
       <li>NodeJS</li>
@@ -36,6 +37,7 @@ const Skills = () => (
       <li>Apache</li>
       <li>SSH</li>
       <li>Git</li>
+      <li>Python</li>
       <li>Linux</li>
       <li>Debian</li>
       <li>CentOS</li>
