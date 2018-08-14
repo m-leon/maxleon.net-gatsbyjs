@@ -11,7 +11,7 @@ const Header = () => (
     <div id='header__links'>
       <NavLink to='/' activeClassName='active' exact={true}>max</NavLink>
       <NavLink to='/skills' activeClassName='active'>skills</NavLink>
-      <NavLink to='/portfolio' activeClassName='active'>portfolio</NavLink>
+      {/* <NavLink to='/portfolio' activeClassName='active'>portfolio</NavLink>  */}
       <NavLink to='/contact' activeClassName='active'>contact</NavLink>
     </div>
   </header>
