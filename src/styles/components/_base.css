@@ -1,9 +1,14 @@
 .content {
-  display: block;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .content__header {
   font-weight: 300;
   margin: 0;
+  margin-bottom: 2rem;
+  text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
