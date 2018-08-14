@@ -6,6 +6,7 @@
   background: var(--dark-blue);
   border: none;
   color: var(--light-gray);
+  cursor: pointer;
   margin-top: 1rem;
   padding: 1.45rem;
 }
