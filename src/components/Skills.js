@@ -4,7 +4,7 @@ const Skills = () => (
   <div className='content'>
     <h2 className='content__header'>my expertises</h2>
     <div id='skills__content'>
-      <p>I’m always in pursuit of the latest technologies that will allow me to create, design, optimize, and perfect my projects</p>
+      <p>I’m always in pursuit of knowledge that will allow me to create, design, optimize, and perfect my work. In the modern web landscape, I strive to find the balance between aesthetics, functionality and purpose.</p>
     </div>
     <ul id='skills__list'>
       <li>HTML 5</li>
