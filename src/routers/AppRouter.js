@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Contact    from '../components/Contact';
+import ContactSuccess from '../components/ContactSuccess';
 import Header     from '../components/Header';
 import Main       from '../components/Main';
 import NotFound   from '../components/NotFound';
@@ -16,6 +17,7 @@ const AppRouter = () => (
       <Switch>
         <Route path='/' component={Main} exact={true} />
         <Route path='/contact' component={Contact} />
+        <Route path='/sent' component={ContactSuccess} />
         <Route path='/portfolio' component={Portfolio} />
         <Route path='/skills' component={Skills} />
         <Route component={NotFound} />
