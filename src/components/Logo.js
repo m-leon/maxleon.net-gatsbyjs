@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Logo = () => (
   <div>
@@ -13,9 +14,11 @@ const Logo = () => (
         />
       </defs>
     </svg>
-    <svg id='logo' viewBox='0 0 350 312'>
-      <use className='logoDraw' href="#logoM" />
-    </svg>
+    <Link to='/'>
+      <svg id='logo' viewBox='0 0 350 312'>
+        <use className='logoDraw' href="#logoM" />
+      </svg>
+    </Link>
   </div>
 );
 
