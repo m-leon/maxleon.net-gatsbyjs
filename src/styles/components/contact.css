@@ -1,6 +1,7 @@
 #contact__form {
   min-width: 300px;
   width: 50%;
+  z-index: 100;
 }
 
 #contact__form button {
