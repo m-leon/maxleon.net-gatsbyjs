@@ -1,8 +1,14 @@
 #main__tagline {
   font-size: 3rem;
   line-height: 2;
+  height: 180px;
+  margin: auto;
   text-align: center;
   width: 100%;
+}
+
+#main__tagline > * {
+  margin: 0;
 }
 
 #main__name {
