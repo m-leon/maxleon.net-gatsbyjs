@@ -3,7 +3,7 @@
   fill: url("#logoGradient");
   stroke: #2396A7;
   stroke-miterlimit: 5;
-  height: 200px;
+  height: 20vh;
 }
 
 .logoDraw {
