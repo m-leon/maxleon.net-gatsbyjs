@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { BrowserRouter, Route } from 'react-router-dom';
+import { AnimatedSwitch } from 'react-router-transition';
+
 import Contact    from '../components/Contact';
 import ContactSuccess from '../components/ContactSuccess';
 import Header     from '../components/Header';
@@ -8,20 +11,23 @@ import NotFound   from '../components/NotFound';
 import Portfolio  from '../components/Portfolio';
 import Skills     from '../components/Skills';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
 const AppRouter = () => (
   <BrowserRouter>
     <span>
       <Header />
-      <Switch>
+      <AnimatedSwitch
+        atEnter={{ opacity: 0 }}
+        atLeave={{ opacity: 0 }}
+        atActive={{ opacity: 1 }}
+        className="switch-wrapper"
+      >
         <Route path="/" component={Main} exact={true} />
         <Route path="/contact" component={Contact} />
         <Route path="/sent" component={ContactSuccess} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/skills" component={Skills} />
         <Route component={NotFound} />
-      </Switch>
+      </AnimatedSwitch>
     </span>
   </BrowserRouter>
 );

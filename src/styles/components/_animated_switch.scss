@@ -1,0 +1,11 @@
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  left: 50%;
+  margin-top: 3rem;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 80%;
+}

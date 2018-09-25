@@ -1,0 +1,44 @@
+@function shadow-string($color, $length) {
+  $total-length: $length;
+  $string: $color 0px 0px;
+  @while $length > 0 {
+    $mix-amount: 100 - (($length / $total-length) * 100);
+    $mixed-color: mix($color, transparent, $mix-amount);
+    $string-addition: $length+px $length+px;
+    $string: $mixed-color $string-addition, $string;
+    $length: $length - 1;
+  }
+  @return $string
+}
+
+@mixin longshadow($color, $length) {
+  text-shadow: shadow-string($color, $length);
+}
+
+.main {
+  font-size: 8vw;
+
+  span {
+    color: $off-white;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:nth-child(1) {
+      @include longshadow($red, 30);
+    }
+    &:nth-child(2) {
+      @include longshadow($dark-yellow, 30);
+    }
+    &:nth-child(3) {
+      @include longshadow($teal, 30);
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .main {
+    font-size: 8rem;
+  }
+}

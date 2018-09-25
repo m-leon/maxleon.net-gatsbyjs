@@ -3,15 +3,15 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => (
   <header>
-    <div>
-      <h1>Max Leon</h1>
+    <div className="header__logo">
+      León
     </div>
-    <div>
-      <NavLink to="/" activeClassName="active" exact={true}>home</NavLink>
-      <NavLink to="/skills" activeClassName="active">skills</NavLink>
-      <NavLink to="/portfolio" activeClassName="active">portfolio</NavLink>
-      <NavLink to="/contact" activeClassName="active">contact</NavLink>
-    </div>
+    <nav className="header__nav">
+      <NavLink to="/" activeClassName="active" exact={true}>Home</NavLink>
+      <NavLink to="/skills" activeClassName="active">Skills</NavLink>
+      <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
+      <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+    </nav>
   </header>
 );
 
