@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Contact = () => (
-  <div className='content'>
-    <h2 className='content__header'>get in touch</h2>
+  <section>
+    <h2>get in touch</h2>
     <form id='contact__form' action='https://formspree.io/max@maxleon.net' method='POST'>
       <input type='text' name='name' placeholder='name' />
       <input type='text' name='email' placeholder='email' />
@@ -12,7 +12,7 @@ const Contact = () => (
       <input type="hidden" name="_format" value="plain" />
       <button>Submit</button>
     </form>
-  </div>
+  </section>
 );
 
 export default Contact;

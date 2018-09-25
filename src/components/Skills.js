@@ -1,12 +1,12 @@
 import React from 'react';
 
 const Skills = () => (
-  <div className='content'>
-    <h2 className='content__header'>my expertises</h2>
-    <div id='skills__content'>
+  <section>
+    <h2>my expertises</h2>
+    <div>
       <p>I’m always in pursuit of knowledge that will allow me to create, design, optimize, and perfect my work. In the modern web landscape, I strive to find the balance between aesthetics, functionality and purpose.</p>
     </div>
-    <ul id='skills__list'>
+    <ul>
       <li>HTML 5</li>
       <li>CSS 3</li>
       <li>SCSS</li>
@@ -42,18 +42,8 @@ const Skills = () => (
       <li>Debian</li>
       <li>CentOS</li>
       <li>RedHat</li>
-      { /* Purposely loop items for smooth animation */ }
-      <li>HTML 5</li>
-      <li>CSS 3</li>
-      <li>SCSS</li>
-      <li>Javascript</li>
-      <li>ES6</li>
-      <li>Jest</li>
-      <li>React</li>
-      <li>React Native</li>
-      <li>Redux</li>
     </ul>
-  </div>
+  </section>
 );
 
 export default Skills;
