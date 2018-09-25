@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skills = () => (
   <section>
-    <h2>my expertises</h2>
+    <h2>My Expertises</h2>
     <div>
       <p>I’m always in pursuit of knowledge that will allow me to create, design, optimize, and perfect my work. In the modern web landscape, I strive to find the balance between aesthetics, functionality and purpose.</p>
     </div>

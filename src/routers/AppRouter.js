@@ -15,11 +15,11 @@ const AppRouter = () => (
     <span>
       <Header />
       <Switch>
-        <Route path='/' component={Main} exact={true} />
-        <Route path='/contact' component={Contact} />
-        <Route path='/sent' component={ContactSuccess} />
-        <Route path='/portfolio' component={Portfolio} />
-        <Route path='/skills' component={Skills} />
+        <Route path="/" component={Main} exact={true} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/sent" component={ContactSuccess} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/skills" component={Skills} />
         <Route component={NotFound} />
       </Switch>
     </span>

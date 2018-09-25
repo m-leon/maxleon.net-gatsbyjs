@@ -12,7 +12,7 @@ const Main = () => (
       <p>from California.</p>
     </span>
     <span>
-      <a href='https://github.com/m-leon'>GitHub</a> &bull; <a href='mailto:max@maxleon.net'>email</a>
+      <a href="https://github.com/m-leon">GitHub</a> &bull; <a href="mailto:max@maxleon.net">Email</a>
     </span>
   </section>
 );
