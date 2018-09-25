@@ -1,0 +1,133 @@
+.contact {
+  #map, form {
+    height: 455px;
+  }
+
+  #map {
+    background-color: $dark-blue;
+    background-image: url('../resources/map.svg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto 485px;
+    float: left;
+    position: relative;
+    width: 100%;
+
+    .map-locator {
+      background: rgba(0, 0, 0, 0.4);
+      border: solid 2px black;
+      border-radius: 1.5rem;
+      height: 3rem;
+      left: 104px;
+      position: absolute;
+      top: 194px;
+      width: 3rem;
+
+      &:before {
+        background: black;
+        border-radius: 5px;
+        content: '';
+        height: 8px;
+        left: 9px;
+        position: absolute;
+        top: 9px;
+        width: 8px;
+      }
+
+      .tooltip {
+        background: white;
+        color: $dark-gray;
+        font-size: 1.5rem;
+        font-weight: 600;
+        left: 5rem;
+        position: absolute;
+        top: -1rem;
+
+        /* Arrow Left of tooltip */
+        &:before {
+          border-bottom: solid transparent 0.8rem;
+          border-right: solid white 1rem;
+          border-top: solid transparent 0.8rem;
+          content: '';
+          left: -1rem;
+          position: absolute;
+          top: 1.4rem;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0 1rem;
+
+          li {
+            border-bottom: solid thin #CCC;
+            padding: 1rem;
+            white-space: nowrap;
+
+            &:last-child {
+              border: none;
+            }
+
+            a {
+              color: $dark-yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  form {
+    background: darken($off-white, 15%);
+    float: left;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    width: 100%;
+
+    button,
+    input,
+    textarea {
+      border: 0;
+      outline: 0;
+      padding: 1.2rem;
+      width: 100%;
+      transition: background-color 0.5s ease-in-out 0s;
+    }
+
+    button {
+      background: $dark-blue;
+      color: white;
+      margin-top: 1rem;
+
+      &:hover {
+        background: darken($dark-blue, 10%);
+      }
+    }
+
+    input,
+    textarea {
+      background: darken($off-white, 5%);
+      color: $dark-gray;
+      margin-bottom: 0.8rem;
+      resize: vertical;
+
+      &:focus {
+        background: $off-white;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .contact {
+     #map {
+       width: 75%;
+     }
+     form {
+       width: 25%;
+     }
+  }
+}

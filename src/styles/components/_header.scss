@@ -11,6 +11,7 @@ header {
     background: $dark-blue;
     border-radius: 0.9rem;
     color: $off-white;
+    font-family: 'Montserrat', sans-serif;
     font-size: 6vw;
     padding: 1rem;
   }
@@ -19,6 +20,10 @@ header {
     a {
       display: block;
       font-size: 4vw;
+
+      &.active {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -26,7 +31,7 @@ header {
 @media (min-width: $desktop-breakpoint) {
   header {
     .header__logo {
-      font-size: 6rem;
+      font-size: 5rem;
     }
 
     .header__nav {

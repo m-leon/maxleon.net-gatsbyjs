@@ -1,11 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => (
   <header>
-    <div className="header__logo">
+    <Link to='/' className="header__logo">
       León
-    </div>
+    </Link>
     <nav className="header__nav">
       <NavLink to="/" activeClassName="active" exact={true}>Home</NavLink>
       <NavLink to="/skills" activeClassName="active">Skills</NavLink>

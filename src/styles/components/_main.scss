@@ -16,12 +16,11 @@
 }
 
 .main {
-  font-size: 8vw;
-
   span {
     color: $off-white;
     display: block;
     font-weight: 600;
+    font-size: 8vw;
     text-align: center;
     text-transform: uppercase;
 
@@ -39,6 +38,8 @@
 
 @media (min-width: $desktop-breakpoint) {
   .main {
-    font-size: 8rem;
+    span {
+      font-size: 8rem;
+    }
   }
 }
