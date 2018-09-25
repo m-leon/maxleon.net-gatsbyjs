@@ -8,10 +8,10 @@ const otherPages = [
 ];
 
 const NotFound = () => (
-  <div>
+  <section>
     <h2>404</h2>
     <p>Not found. Check out {otherPages[Math.floor(Math.random()*otherPages.length)]}</p>
-  </div>
+  </section>
 );
 
 export default NotFound;
