@@ -19,6 +19,10 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 button {
   cursor: pointer;
 }
