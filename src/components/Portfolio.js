@@ -4,6 +4,7 @@ import PortfolioModal from './PortfolioModal';
 class Portfolio extends React.Component {
   constructor () {
     super();
+
     this.state = {
       hushModalOpen: false,
       yoovoModalOpen: false,
@@ -16,39 +17,15 @@ class Portfolio extends React.Component {
   }
 
   handleOpenModal (modal) {
-    switch (modal) {
-      case 'hush':
-        this.setState({ hushModalOpen: true });
-        break;
-      case 'yoovo':
-        this.setState({ yoovoModalOpen: true });
-        break;
-      case 'smart':
-        this.setState({ smartModalOpen: true });
-        break;
-      case 'craigslist':
-        this.setState({ craigslistModalOpen: true });
-        break;
-      default:
-    }
+    let newState = {};
+    newState[modal] = true;
+    this.setState(newState);
   }
 
   handleCloseModal (modal) {
-    switch (modal) {
-      case 'hush':
-        this.setState({ hushModalOpen: false });
-        break;
-      case 'yoovo':
-        this.setState({ yoovoModalOpen: false });
-        break;
-      case 'smart':
-        this.setState({ smartModalOpen: false });
-        break;
-      case 'craigslist':
-        this.setState({ craigslistModalOpen: false });
-        break;
-      default:
-    }
+    let newState = {};
+    newState[modal] = false;
+    this.setState(newState);
   }
 
   render () {
@@ -56,38 +33,38 @@ class Portfolio extends React.Component {
       <section className="portfolio">
         <h2 className="portfolio__title">My Work</h2>
         <div className="portfolio__matrix">
-          <div className="portfolio__card portfolio__card--hush" onClick={() => { this.handleOpenModal('hush') }}>
+          <div className="portfolio__card portfolio__card--hush" onClick={() => { this.handleOpenModal('hushModalOpen') }}>
             <div className="portfolio__overlay"><span>Hush</span></div>
           </div>
-          <div className="portfolio__card portfolio__card--yoovo" onClick={() => { this.handleOpenModal('yoovo') }}>
+          <div className="portfolio__card portfolio__card--yoovo" onClick={() => { this.handleOpenModal('yoovoModalOpen') }}>
             <div className="portfolio__overlay"><span>Yoovo</span></div>
           </div>
-          <div className="portfolio__card portfolio__card--smart-start" onClick={() => { this.handleOpenModal('smart') }}>
+          <div className="portfolio__card portfolio__card--smart-start" onClick={() => { this.handleOpenModal('smartModalOpen') }}>
             <div className="portfolio__overlay"><span>Smart Start Preschool</span></div>
           </div>
-          <div className="portfolio__card portfolio__card--craigslist" onClick={() => { this.handleOpenModal('craigslist') }}>
+          <div className="portfolio__card portfolio__card--craigslist" onClick={() => { this.handleOpenModal('craigslistModalOpen') }}>
             <div className="portfolio__overlay"><span>Craigslist Conceptual Redesign</span></div>
           </div>
         </div>
         <PortfolioModal
           isOpen={this.state.hushModalOpen}
           title="Hush"
-          onRequestClose={() => { this.handleCloseModal('hush') }}
+          onRequestClose={() => { this.handleCloseModal('hushModalOpen') }}
         />
         <PortfolioModal
           isOpen={this.state.yoovoModalOpen}
           title="Yoovo"
-          onRequestClose={() => { this.handleCloseModal('yoovo') }}
+          onRequestClose={() => { this.handleCloseModal('yoovoModalOpen') }}
         />
         <PortfolioModal
           isOpen={this.state.smartModalOpen}
           title="Smart"
-          onRequestClose={() => { this.handleCloseModal('smart') }}
+          onRequestClose={() => { this.handleCloseModal('smartModalOpen') }}
         />
         <PortfolioModal
           isOpen={this.state.craigslistModalOpen}
           title="Craigslist Redesign"
-          onRequestClose={() => { this.handleCloseModal('craigslist') }}
+          onRequestClose={() => { this.handleCloseModal('craigslistModalOpen') }}
         />
       </section>
     );

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 
+ReactModal.setAppElement('#root');
+
 const PortfolioModal = (props) => (
   <ReactModal
      isOpen={props.isOpen}
@@ -9,7 +11,7 @@ const PortfolioModal = (props) => (
      closeTimeoutMS={200}
      className="portfolio__modal"
   >
-    <p>{props.title}</p>
+    <h3 className="portfolio__modal__title">{props.title}</h3>
   </ReactModal>
 );
 
