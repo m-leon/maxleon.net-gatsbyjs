@@ -8,7 +8,7 @@ const Skills = () => (
     <div className="skills__content">
       <h2>My Expertises</h2>
       <span>Always aim for perfection.</span>
-      <p>I’m always in pursuit of knowledge that will allow me to create, design, optimize, and perfect my work. In the modern web landscape, I strive to find the balance between aesthetics, functionality and purpose.</p>
+      <p>I’m always in pursuit of knowledge that will allow me to create, design, optimize, and perfect my work. In the modern web landscape, I strive to find the balance between aesthetics, functionality, and purpose.</p>
     </div>
     <div className="skills__matrix">
       <div className="skills__card">
