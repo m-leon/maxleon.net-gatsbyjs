@@ -1,18 +1,12 @@
-@function shadow-string($color, $length) {
+@function shadow($color, $length: 20) {
   $total-length: $length;
   $string: -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color, 1px 1px 0 $color;
   @while $length > 0 {
-    $mix-amount: 100 - (($length / $total-length) * 100);
-    $mixed-color: mix($color, transparent, $mix-amount);
     $string-addition: $length+px $length+px;
-    $string: $mixed-color $string-addition, $string;
+    $string: $color $string-addition, $string;
     $length: $length - 1;
   }
   @return $string
-}
-
-@mixin longshadow($color, $length) {
-  text-shadow: shadow-string($color, $length);
 }
 
 .main {
@@ -25,13 +19,13 @@
     text-transform: uppercase;
 
     &:nth-child(1) {
-      @include longshadow($blue, 30);
+      text-shadow: shadow($blue);
     }
     &:nth-child(2) {
-      @include longshadow($red, 30);
+      text-shadow: shadow($red);
     }
     &:nth-child(3) {
-      @include longshadow($yellow, 30);
+      text-shadow: shadow($yellow);
     }
   }
 }
