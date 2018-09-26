@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Icon } from 'react-icons-kit'
-import { mail, github } from 'react-icons-kit/entypo/'
+import { linkedin, mail, github } from 'react-icons-kit/entypo/'
 
 const Contact = () => (
   <section className="contact">
@@ -38,6 +38,7 @@ const Contact = () => (
       <div className="contact__icons">
         <a href="mailto:max@maxleon.net"><Icon size={32} icon={mail} /></a>
         <a href="https://github.com/m-leon/"><Icon size={32} icon={github} /></a>
+        <a href="https://www.linkedin.com/in/max-leon-22398439/"><Icon size={32} icon={linkedin} /></a>
       </div>
     </div>
   </section>
