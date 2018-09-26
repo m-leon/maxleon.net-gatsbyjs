@@ -20,7 +20,7 @@ const Contact = () => (
         </div>
       </div>
       <div className="contact__form">
-        <p>Get in Touch</p>
+        <h3>Get in Touch</h3>
         <form action="https://formspree.io/max@maxleon.net" method="POST">
           <input type="text" name="name" placeholder="name" />
           <input type="text" name="email" placeholder="email" />
@@ -29,8 +29,8 @@ const Contact = () => (
           <input type="hidden" name="_next" value="https://maxleon.net/sent" />
           <input type="hidden" name="_format" value="plain" />
           <button>Submit</button>
-          </form>
-        </div>
+        </form>
+      </div>
     </section>
 );
 
