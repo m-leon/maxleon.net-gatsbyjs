@@ -5,7 +5,7 @@
   }
 
   #map {
-    background-color: $dark-blue;
+    background-color: $blue;
     background-image: url('../resources/map.svg');
     background-position: left top;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 
     .map-locator {
       background: rgba(0, 0, 0, 0.4);
-      border: solid 2px black;
+      border: solid 2px $dark-gray;
       border-radius: 1.5rem;
       height: 3rem;
       left: 104px;
@@ -36,7 +36,7 @@
       }
 
       .tooltip {
-        background: white;
+        background: $off-white;
         color: $dark-gray;
         font-size: 1.5rem;
         font-weight: 600;
@@ -47,7 +47,7 @@
         /* Arrow Left of tooltip */
         &:before {
           border-bottom: solid transparent 0.8rem;
-          border-right: solid white 1rem;
+          border-right: solid $off-white 1rem;
           border-top: solid transparent 0.8rem;
           content: '';
           left: -1rem;
@@ -60,7 +60,7 @@
           padding: 0 1rem;
 
           li {
-            border-bottom: solid thin #CCC;
+            border-bottom: solid thin $dark-gray;
             padding: 1rem;
             white-space: nowrap;
 
@@ -69,7 +69,7 @@
             }
 
             a {
-              color: $dark-yellow;
+              color: $red;
             }
           }
         }
@@ -78,9 +78,11 @@
   }
 
   form {
-    background: darken($off-white, 15%);
+    background: $dark-gray;
+    color: $off-white;
     float: left;
     font-size: 1.8rem;
+    overflow-y: auto;
     padding: 1.5rem;
     width: 100%;
 
@@ -95,18 +97,18 @@
     }
 
     button {
-      background: $dark-blue;
-      color: white;
+      background: $blue;
+      color: $off-white;
       margin-top: 1rem;
 
       &:hover {
-        background: darken($dark-blue, 10%);
+        background: darken($blue, 10%);
       }
     }
 
     input,
     textarea {
-      background: darken($off-white, 5%);
+      background: darken($off-white, 10%);
       color: $dark-gray;
       margin-bottom: 0.8rem;
       resize: vertical;

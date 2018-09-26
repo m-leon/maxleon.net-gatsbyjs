@@ -25,13 +25,13 @@
     text-transform: uppercase;
 
     &:nth-child(1) {
-      @include longshadow($red, 30);
+      @include longshadow($blue, 30);
     }
     &:nth-child(2) {
-      @include longshadow($dark-yellow, 30);
+      @include longshadow($red, 30);
     }
     &:nth-child(3) {
-      @include longshadow($teal, 30);
+      @include longshadow($yellow, 30);
     }
   }
 }
