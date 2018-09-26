@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Icon } from 'react-icons-kit'
-import { book, lock, mobile, mobileCombo } from 'react-icons-kit/entypo/'
+import { fastForward, lock, mobile, mobileCombo } from 'react-icons-kit/entypo/'
 
 const Skills = () => (
   <section className="skills">
@@ -27,9 +27,9 @@ const Skills = () => (
         <p className="skills__card__content">My skillset allows me to create solutions that will run natively on any device.</p>
       </div>
       <div className="skills__card">
-        <Icon size={32} icon={book} />
-        <div className="skills__card__title">User Engagement</div>
-        <p className="skills__card__content">Creating captivating experiences allows me to tell your product’s story through your online presence.</p>
+        <Icon size={32} icon={fastForward} />
+        <div className="skills__card__title">Optimized Results</div>
+        <p className="skills__card__content">I understand the importance of creating exeriences that become interactive with no delay to expose more users to your product.</p>
       </div>
     </div>
   </section>
