@@ -1,6 +1,6 @@
 @function shadow-string($color, $length) {
   $total-length: $length;
-  $string: $color 0px 0px;
+  $string: -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color, 1px 1px 0 $color;
   @while $length > 0 {
     $mix-amount: 100 - (($length / $total-length) * 100);
     $mixed-color: mix($color, transparent, $mix-amount);
