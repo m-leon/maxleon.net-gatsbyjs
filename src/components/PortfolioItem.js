@@ -13,6 +13,10 @@ const PortfolioItem = (props) => (
     <PortfolioModal
       isOpen={props.modalIsOpen}
       title={props.title}
+      image={props.bgImage}
+      content={props.modalContent}
+      link={props.link}
+      github={props.github}
       onRequestClose={props.modalHandleClose}
     />
   </span>

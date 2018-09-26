@@ -36,6 +36,9 @@ class Portfolio extends React.Component {
           <PortfolioItem
             bgImage={require('../resources/hush.png')}
             title="Hush"
+            github="https://github.com/m-leon/hush"
+            link="https://hush.maxleon.net"
+            modalContent="Hush was developed as a secure alternative to Pastebin"
             modalHandleOpen={() => { this.handleOpenModal('hushModalOpen') }}
             modalHandleClose={() => { this.handleCloseModal('hushModalOpen') }}
             modalIsOpen={this.state.hushModalOpen}
