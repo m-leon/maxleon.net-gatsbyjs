@@ -38,7 +38,7 @@ class Portfolio extends React.Component {
             title="Hush"
             github="https://github.com/m-leon/hush"
             link="https://hush.maxleon.net"
-            modalContent="Hush was developed as a secure alternative to Pastebin"
+            modalContent="I developed Hush as a secure alternative to Pastebin"
             modalHandleOpen={() => { this.handleOpenModal('hushModalOpen') }}
             modalHandleClose={() => { this.handleCloseModal('hushModalOpen') }}
             modalIsOpen={this.state.hushModalOpen}
@@ -46,6 +46,8 @@ class Portfolio extends React.Component {
           <PortfolioItem
             bgImage={require('../resources/yoovo.png')}
             title="Yoovo"
+            link="https://yoovo.co"
+            modalContent="Yoovo is a web design startup that I helped found as a Senior Developer"
             modalHandleOpen={() => { this.handleOpenModal('yoovoModalOpen') }}
             modalHandleClose={() => { this.handleCloseModal('yoovoModalOpen') }}
             modalIsOpen={this.state.yoovoModalOpen}
@@ -53,6 +55,7 @@ class Portfolio extends React.Component {
           <PortfolioItem
             bgImage={require('../resources/smart-start.png')}
             title="Smart Start Preschool"
+            modalContent="Smart Start Preschool is a local preschool and child care company who's website I'm working on. Email me for more info."
             modalHandleOpen={() => { this.handleOpenModal('smartModalOpen') }}
             modalHandleClose={() => { this.handleCloseModal('smartModalOpen') }}
             modalIsOpen={this.state.smartModalOpen}
@@ -60,6 +63,9 @@ class Portfolio extends React.Component {
           <PortfolioItem
             bgImage={require('../resources/craigslist.png')}
             title="Craigslist Redesign"
+            github="https://github.com/m-leon/craigslist-redesign"
+            link="https://craigslist-redesign.netlify.com/"
+            modalContent="A conceptual redesign to bring Craigslist to the modern day design"
             modalHandleOpen={() => { this.handleOpenModal('craigslistModalOpen') }}
             modalHandleClose={() => { this.handleCloseModal('craigslistModalOpen') }}
             modalIsOpen={this.state.craigslistModalOpen}
