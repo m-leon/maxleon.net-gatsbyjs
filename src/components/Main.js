@@ -5,7 +5,7 @@ const Main = () => (
     <span>I’m Max Leon</span>
     <span>A Developer</span>
     <span>From California</span>
-</section>
+  </section>
 );
 
 export default Main;
