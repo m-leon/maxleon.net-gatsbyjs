@@ -5,20 +5,22 @@ import { mail, github } from 'react-icons-kit/entypo/'
 
 const Contact = () => (
   <section className="contact">
-    <div className="contact__map">
-      <div className="contact__map__locator">
-        <div className="contact__map__tooltip">
-          <ul>
-            <li>
-              <span>California</span>
-            </li>
-            <li>
-              <a href="mailto:max@maxleon.net">max@maxleon.net</a>
-            </li>
-            <li>
-              (530) 522-8476
-            </li>
-          </ul>
+    <div className="contact__map__wrapper">
+      <div className="contact__map">
+        <div className="contact__map__locator">
+          <div className="contact__map__tooltip">
+            <ul>
+              <li>
+                <span>California</span>
+              </li>
+              <li>
+                <a href="mailto:max@maxleon.net">max@maxleon.net</a>
+              </li>
+              <li>
+                (530) 522-8476
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
