@@ -1,48 +1,37 @@
 import React from 'react';
 
+import { Icon } from 'react-icons-kit'
+import { book, lock, mobile, mobileCombo } from 'react-icons-kit/entypo/'
+
 const Skills = () => (
-  <section>
-    <h2>My Expertises</h2>
-    <div>
+  <section className="skills">
+    <div className="skills__content">
+      <h2>My Expertises</h2>
+      <span>Always aim for perfection.</span>
       <p>I’m always in pursuit of knowledge that will allow me to create, design, optimize, and perfect my work. In the modern web landscape, I strive to find the balance between aesthetics, functionality and purpose.</p>
     </div>
-    <ul>
-      <li>HTML 5</li>
-      <li>CSS 3</li>
-      <li>SCSS</li>
-      <li>Javascript</li>
-      <li>ES6</li>
-      <li>Jest</li>
-      <li>React</li>
-      <li>React Native</li>
-      <li>MobX</li>
-      <li>Redux</li>
-      <li>Yarn</li>
-      <li>NodeJS</li>
-      <li>Webpack</li>
-      <li>PHP</li>
-      <li>PHPUnit</li>
-      <li>Composer</li>
-      <li>Laravel</li>
-      <li>Lumen</li>
-      <li>Grav</li>
-      <li>Wordpress</li>
-      <li>MySQL</li>
-      <li>MariaDB</li>
-      <li>MongoDB</li>
-      <li>AWS</li>
-      <li>S3</li>
-      <li>Lambda</li>
-      <li>Nginx</li>
-      <li>Apache</li>
-      <li>SSH</li>
-      <li>Git</li>
-      <li>Python</li>
-      <li>Linux</li>
-      <li>Debian</li>
-      <li>CentOS</li>
-      <li>RedHat</li>
-    </ul>
+    <div className="skills__matrix">
+      <div className="skills__card">
+        <Icon size={32} icon={mobileCombo} />
+        <div className="skills__card__title">Responsive Design</div>
+        <p className="skills__card__content">I follow a mobile first design philosophy that inherently leads to a more fluid result.</p>
+      </div>
+      <div className="skills__card">
+        <Icon size={32} icon={lock} />
+        <div className="skills__card__title">Security Oriented</div>
+        <p className="skills__card__content">Keeping up on the latest trends allows me to stay a step ahead of all those with malicious intent.</p>
+      </div>
+      <div className="skills__card">
+      <Icon size={32} icon={mobile} />
+        <div className="skills__card__title">Mobile App Development</div>
+        <p className="skills__card__content">My skillset allows me to create solutions that will run natively on any device.</p>
+      </div>
+      <div className="skills__card">
+        <Icon size={32} icon={book} />
+        <div className="skills__card__title">User Engagement</div>
+        <p className="skills__card__content">Creating captivating experiences allows me to tell your product’s story through your online presence.</p>
+      </div>
+    </div>
   </section>
 );
 
