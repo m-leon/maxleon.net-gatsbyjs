@@ -1,5 +1,5 @@
 import React from 'react';
-import PortfolioModal from './PortfolioModal';
+import PortfolioItem from './PortfolioItem';
 
 class Portfolio extends React.Component {
   constructor () {
@@ -16,13 +16,13 @@ class Portfolio extends React.Component {
     this.handleCloseModal = this.handleCloseModal.bind(this);
   }
 
-  handleOpenModal (modal) {
+  handleOpenModal(modal) {
     let newState = {};
     newState[modal] = true;
     this.setState(newState);
   }
 
-  handleCloseModal (modal) {
+  handleCloseModal(modal) {
     let newState = {};
     newState[modal] = false;
     this.setState(newState);
@@ -33,39 +33,35 @@ class Portfolio extends React.Component {
       <section className="portfolio">
         <h2 className="portfolio__title">My Work</h2>
         <div className="portfolio__matrix">
-          <div className="portfolio__card portfolio__card--hush" onClick={() => { this.handleOpenModal('hushModalOpen') }}>
-            <div className="portfolio__overlay"><span>Hush</span></div>
-          </div>
-          <div className="portfolio__card portfolio__card--yoovo" onClick={() => { this.handleOpenModal('yoovoModalOpen') }}>
-            <div className="portfolio__overlay"><span>Yoovo</span></div>
-          </div>
-          <div className="portfolio__card portfolio__card--smart-start" onClick={() => { this.handleOpenModal('smartModalOpen') }}>
-            <div className="portfolio__overlay"><span>Smart Start Preschool</span></div>
-          </div>
-          <div className="portfolio__card portfolio__card--craigslist" onClick={() => { this.handleOpenModal('craigslistModalOpen') }}>
-            <div className="portfolio__overlay"><span>Craigslist Conceptual Redesign</span></div>
-          </div>
+          <PortfolioItem
+            bgImage={require('../resources/hush.png')}
+            title="Hush"
+            modalHandleOpen={() => { this.handleOpenModal('hushModalOpen') }}
+            modalHandleClose={() => { this.handleCloseModal('hushModalOpen') }}
+            modalIsOpen={this.state.hushModalOpen}
+          />
+          <PortfolioItem
+            bgImage={require('../resources/yoovo.png')}
+            title="Yoovo"
+            modalHandleOpen={() => { this.handleOpenModal('yoovoModalOpen') }}
+            modalHandleClose={() => { this.handleCloseModal('yoovoModalOpen') }}
+            modalIsOpen={this.state.yoovoModalOpen}
+          />
+          <PortfolioItem
+            bgImage={require('../resources/smart-start.png')}
+            title="Smart Start Preschool"
+            modalHandleOpen={() => { this.handleOpenModal('smartModalOpen') }}
+            modalHandleClose={() => { this.handleCloseModal('smartModalOpen') }}
+            modalIsOpen={this.state.smartModalOpen}
+          />
+          <PortfolioItem
+            bgImage={require('../resources/craigslist.png')}
+            title="Craigslist Redesign"
+            modalHandleOpen={() => { this.handleOpenModal('craigslistModalOpen') }}
+            modalHandleClose={() => { this.handleCloseModal('craigslistModalOpen') }}
+            modalIsOpen={this.state.craigslistModalOpen}
+          />
         </div>
-        <PortfolioModal
-          isOpen={this.state.hushModalOpen}
-          title="Hush"
-          onRequestClose={() => { this.handleCloseModal('hushModalOpen') }}
-        />
-        <PortfolioModal
-          isOpen={this.state.yoovoModalOpen}
-          title="Yoovo"
-          onRequestClose={() => { this.handleCloseModal('yoovoModalOpen') }}
-        />
-        <PortfolioModal
-          isOpen={this.state.smartModalOpen}
-          title="Smart"
-          onRequestClose={() => { this.handleCloseModal('smartModalOpen') }}
-        />
-        <PortfolioModal
-          isOpen={this.state.craigslistModalOpen}
-          title="Craigslist Redesign"
-          onRequestClose={() => { this.handleCloseModal('craigslistModalOpen') }}
-        />
       </section>
     );
   }

@@ -9,57 +9,44 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    .portfolio__card {
-      background-position: top center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      box-shadow: 0 3px 16px rgba(0,0,0,.1);
-      margin-bottom: 5rem;
-      padding-top: 46.2%; /* (Image Height / Image Width) * Container Width */
-      position: relative;
+    span {
       width: 100%;
 
-      .portfolio__overlay {
-        background: rgba(0, 0, 0, 0.5);
-        color: $off-white;
-        font-size: 2rem;
-        cursor: pointer;
-        height: 100%;
-        left: 50%;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        transition: opacity 0.5s ease-in-out 0s;
-        width: 100%;
+      .portfolio__card {
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        box-shadow: 0 3px 16px rgba(0,0,0,.1);
+        margin-bottom: 5rem;
+        padding-top: 46.2%; /* (Image Height / Image Width) * Container Width */
+        position: relative;
 
-        span {
+        .portfolio__overlay {
+          background: rgba(0, 0, 0, 0.5);
+          color: $off-white;
+          font-size: 2rem;
+          cursor: pointer;
+          height: 100%;
           left: 50%;
+          opacity: 0;
           position: absolute;
-          text-align: center;
           top: 50%;
           transform: translate(-50%, -50%);
+          transition: opacity 0.5s ease-in-out 0s;
+          width: 100%;
+
+          span {
+            left: 50%;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          &:hover {
+            opacity: 1;
+          }
         }
-
-        &:hover {
-          opacity: 1;
-        }
-      }
-
-      &.portfolio__card--hush {
-        background-image: url('../resources/hush.png');
-      }
-
-      &.portfolio__card--yoovo {
-        background-image: url('../resources/yoovo.png');
-      }
-
-      &.portfolio__card--smart-start {
-        background-image: url('../resources/smart-start.png');
-      }
-
-      &.portfolio__card--craigslist {
-        background-image: url('../resources/craigslist.png');
       }
     }
   }
@@ -70,9 +57,11 @@
     .portfolio__matrix {
       justify-content: space-around;
 
-      .portfolio__card {
-        padding-top: 20.2%; /* Calculated as above */
+      span {
         width: 45%;
+
+        .portfolio__card {
+        }
       }
     }
   }
