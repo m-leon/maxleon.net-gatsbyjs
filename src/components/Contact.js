@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { Icon } from 'react-icons-kit'
+import { mail, github } from 'react-icons-kit/entypo/'
+
 const Contact = () => (
   <section className="contact">
       <div className="contact__map">
@@ -30,6 +33,10 @@ const Contact = () => (
           <input type="hidden" name="_format" value="plain" />
           <button>Submit</button>
         </form>
+        <div className="contact__icons">
+          <a href="mailto:max@maxleon.net"><Icon size={32} icon={mail} /></a>
+          <a href="https://github.com/m-leon/"><Icon size={32} icon={github} /></a>
+        </div>
       </div>
     </section>
 );

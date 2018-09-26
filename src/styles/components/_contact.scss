@@ -123,6 +123,23 @@
         }
       }
     }
+
+    .contact__icons {
+      margin-top: 2rem;
+      text-align: center;
+
+      a {
+        color: $off-white;
+      }
+
+      > * {
+        margin-right: 1rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
   }
 }
 
