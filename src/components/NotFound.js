@@ -7,11 +7,9 @@ const otherPages = [
   <Link to="/portfolio">my work</Link>
 ];
 
-const NotFound = () => (
+export default () => (
   <section>
     <h2>404</h2>
     <p>Not found. Check out {otherPages[Math.floor(Math.random()*otherPages.length)]}</p>
   </section>
 );
-
-export default NotFound;

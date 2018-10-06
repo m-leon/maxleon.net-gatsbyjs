@@ -3,7 +3,7 @@ import React from 'react';
 import { Icon } from 'react-icons-kit'
 import { linkedin, mail, github } from 'react-icons-kit/entypo/'
 
-const Contact = () => (
+export default () => (
   <section className="contact">
     <div className="contact__map__wrapper">
       <div className="contact__map">
@@ -43,5 +43,3 @@ const Contact = () => (
     </div>
   </section>
 );
-
-export default Contact;

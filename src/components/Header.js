@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-const Header = () => (
+export default () => (
   <header>
     <Link to='/' className="header__logo">
       León
@@ -14,5 +14,3 @@ const Header = () => (
     </nav>
   </header>
 );
-
-export default Header;

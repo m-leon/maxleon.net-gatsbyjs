@@ -1,7 +1,7 @@
 import React from 'react';
 import PortfolioModal from './PortfolioModal';
 
-const PortfolioItem = (props) => (
+export default (props) => (
   <span>
     <div
       style={{ backgroundImage: 'url(' + props.bgImage + ')' }}
@@ -21,5 +21,3 @@ const PortfolioItem = (props) => (
     />
   </span>
 );
-
-export default PortfolioItem;

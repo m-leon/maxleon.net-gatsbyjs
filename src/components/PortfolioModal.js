@@ -5,7 +5,7 @@ import { github, link } from 'react-icons-kit/entypo/'
 
 ReactModal.setAppElement('#root');
 
-const PortfolioModal = (props) => (
+export default (props) => (
   <ReactModal
      isOpen={props.isOpen}
      contentLabel={props.title}
@@ -22,5 +22,3 @@ const PortfolioModal = (props) => (
     </div>
   </ReactModal>
 );
-
-export default PortfolioModal;

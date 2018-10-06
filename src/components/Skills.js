@@ -3,7 +3,7 @@ import React from 'react';
 import { Icon } from 'react-icons-kit'
 import { fastForward, lock, mobile, mobileCombo } from 'react-icons-kit/entypo/'
 
-const Skills = () => (
+export default () => (
   <section className="skills">
     <div className="skills__content">
       <h2>My Expertises</h2>
@@ -34,5 +34,3 @@ const Skills = () => (
     </div>
   </section>
 );
-
-export default Skills;

@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import AppRouter from './routers/AppRouter';
 
 import 'normalize.css';
-import './styles/style.css';
+import './styles/style.scss';
 
 ReactDOM.render(<AppRouter />, document.getElementById('root'));
