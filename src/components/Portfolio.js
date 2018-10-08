@@ -7,6 +7,7 @@ class Portfolio extends React.Component {
 
     this.state = {
       hushModalOpen: false,
+      componentModalOpen: false,
       yoovoModalOpen: false,
       smartModalOpen: false,
       craigslistModalOpen: false
@@ -42,6 +43,16 @@ class Portfolio extends React.Component {
             modalHandleOpen={() => { this.handleOpenModal('hushModalOpen') }}
             modalHandleClose={() => { this.handleCloseModal('hushModalOpen') }}
             modalIsOpen={this.state.hushModalOpen}
+          />
+          <PortfolioItem
+            bgImage={require('../resources/component-bucket.png')}
+            title="Components Bucket"
+            github="https://github.com/m-leon/component-bucket"
+            link="https://component-bucket.netlify.com"
+            modalContent="A showcase of small components"
+            modalHandleOpen={() => { this.handleOpenModal('componentModalOpen') }}
+            modalHandleClose={() => { this.handleCloseModal('componentModalOpen') }}
+            modalIsOpen={this.state.componentModalOpen}
           />
           <PortfolioItem
             bgImage={require('../resources/yoovo.png')}
