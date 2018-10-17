@@ -1,4 +1,6 @@
 header {
+  background: $blue;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: space-between;
   padding: 1.25rem;
@@ -8,9 +10,9 @@ header {
   }
 
   .header__logo {
-    background: $blue;
+    background: $off-white;
     border-radius: 0.9rem;
-    color: $off-white;
+    color: $blue;
     font-family: 'Montserrat', sans-serif;
     font-size: 6vw;
     padding: 1rem;
@@ -22,6 +24,7 @@ header {
 
   .header__nav {
     a {
+      color: $off-white;
       display: block;
       font-size: 4vw;
 
