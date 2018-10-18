@@ -27,9 +27,9 @@ export default () => (
     <div className="contact__form">
       <h3>Get in Touch</h3>
       <form action="https://formspree.io/max@maxleon.net" method="POST">
-        <input type="text" name="name" placeholder="name" />
-        <input type="text" name="email" placeholder="email" />
-        <textarea rows="4" name="message" placeholder="message"></textarea>
+        <input type="text" name="name" placeholder="name" required />
+        <input type="email" name="email" placeholder="email" required />
+        <textarea rows="4" name="message" placeholder="message" required></textarea>
         <input type="text" name="_gotcha" style={{display:"none"}} />
         <input type="hidden" name="_next" value="https://maxleon.net/sent" />
         <input type="hidden" name="_format" value="plain" />

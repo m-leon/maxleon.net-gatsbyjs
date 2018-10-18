@@ -116,6 +116,7 @@
       input,
       textarea {
         background: darken($off-white, 10%);
+        box-shadow: none;
         color: $dark-gray;
         margin-bottom: 0.8rem;
         resize: vertical;
