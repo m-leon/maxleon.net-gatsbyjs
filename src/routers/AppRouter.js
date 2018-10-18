@@ -19,7 +19,7 @@ const AppRouter = () => (
         atEnter={{ opacity: 0 }}
         atLeave={{ opacity: 0 }}
         atActive={{ opacity: 1 }}
-        className="switch-wrapper"
+        className="switch"
       >
         <Route path="/" component={Main} exact={true} />
         <Route path="/contact" component={Contact} />

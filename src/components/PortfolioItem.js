@@ -4,8 +4,7 @@ import PortfolioModal from './PortfolioModal';
 export default (props) => (
   <span>
     <div
-      style={{ backgroundImage: 'url(' + props.bgImage + ')' }}
-      className="portfolio__card"
+      className={`portfolio__card ${props.bgClass}`}
       onClick={props.modalHandleOpen}
     >
       <div className="portfolio__overlay"><span>{props.title}</span></div>

@@ -13,12 +13,13 @@
       width: 100%;
 
       .portfolio__card {
+        background-color: $blue;
         background-position: top center;
         background-size: contain;
         background-repeat: no-repeat;
         box-shadow: 0 3px 16px rgba(0,0,0,.1);
         margin-bottom: 5rem;
-        padding-top: 46.2%; /* (Image Height / Image Width) * Container Width */
+        padding-top: 56.2%; /* (Image Height / Image Width) * Container Width */
         position: relative;
 
         .portfolio__overlay {
@@ -52,6 +53,26 @@
   }
 }
 
+.portfolio__card--component-bucket {
+  background: url('../resources/component-bucket@1x.png');
+}
+
+.portfolio__card--craigslist {
+  background-image: url('../resources/craigslist@1x.png');
+}
+
+.portfolio__card--hush {
+  background-image: url('../resources/hush@1x.png');
+}
+
+.portfolio__card--smart-start {
+  background-image: url('../resources/smart-start@1x.png');
+}
+
+.portfolio__card--yoovo {
+  background-image: url('../resources/yoovo@1x.png');
+}
+
 @media (min-width: $desktop-breakpoint) {
   .portfolio {
     .portfolio__matrix {
@@ -61,5 +82,28 @@
         width: 45%;
       }
     }
+  }
+}
+
+@media only screen and ( min-device-pixel-ratio: 1.25),
+  only screen and ( min-resolution: 200dpi) {
+  .portfolio__card--component-bucket {
+    background: url('../resources/component-bucket@2x.png');
+  }
+
+  .portfolio__card--craigslist {
+    background-image: url('../resources/craigslist@2x.png');
+  }
+
+  .portfolio__card--hush {
+    background-image: url('../resources/hush@2x.png');
+  }
+
+  .portfolio__card--smart-start {
+    background-image: url('../resources/smart-start@2x.png');
+  }
+
+  .portfolio__card--yoovo {
+    background-image: url('../resources/yoovo@2x.png');
   }
 }

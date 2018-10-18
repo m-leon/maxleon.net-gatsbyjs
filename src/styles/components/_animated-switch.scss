@@ -1,11 +1,11 @@
-.switch-wrapper {
+.switch {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
   position: relative;
 }
 
-.switch-wrapper > div {
-  left: 50%;
-  margin-top: 3rem;
+.switch > div {
   position: absolute;
-  transform: translateX(-50%);
   width: 80%;
 }
