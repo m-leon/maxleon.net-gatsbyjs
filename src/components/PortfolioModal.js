@@ -5,6 +5,8 @@ import { github, link } from 'react-icons-kit/entypo/'
 
 ReactModal.setAppElement('#root');
 
+ReactModal.defaultStyles.overlay.backgroundColor = 'rgba(0, 0, 0, 0.75)';
+
 export default (props) => (
   <ReactModal
      isOpen={props.isOpen}

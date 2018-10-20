@@ -85,8 +85,8 @@
   }
 }
 
-@media only screen and ( min-device-pixel-ratio: 1.25),
-  only screen and ( min-resolution: 200dpi) {
+@media (min-device-pixel-ratio: 1.25),
+  (min-resolution: 200dpi) {
   .portfolio__card--component-bucket {
     background: url('../resources/component-bucket@2x.png');
   }
