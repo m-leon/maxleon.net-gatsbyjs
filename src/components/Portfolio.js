@@ -7,6 +7,7 @@ class Portfolio extends React.Component {
 
     this.state = {
       hushModalOpen: false,
+      markdownModalOpen: false,
       componentModalOpen: false,
       yoovoModalOpen: false,
       smartModalOpen: false,
@@ -44,6 +45,17 @@ class Portfolio extends React.Component {
             modalHandleOpen={() => { this.handleOpenModal('hushModalOpen') }}
             modalHandleClose={() => { this.handleCloseModal('hushModalOpen') }}
             modalIsOpen={this.state.hushModalOpen}
+          />
+          <PortfolioItem
+            bgClass="portfolio__card--markdown"
+            bgImage={require('../resources/markdown@2x.png')}
+            title="Markdown React"
+            github="https://github.com/m-leon/markdown-react"
+            link="https://mdr.netlify.com"
+            modalContent="Markdown React is a simple React powered markdown editor online"
+            modalHandleOpen={() => { this.handleOpenModal('markdownModalOpen') }}
+            modalHandleClose={() => { this.handleCloseModal('markdownModalOpen') }}
+            modalIsOpen={this.state.markdownModalOpen}
           />
           <PortfolioItem
             bgClass="portfolio__card--component-bucket"

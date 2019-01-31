@@ -65,6 +65,10 @@
   background-image: url('../resources/hush@1x.png');
 }
 
+.portfolio__card--markdown {
+  background-image: url('../resources/markdown@1x.png');
+}
+
 .portfolio__card--smart-start {
   background-image: url('../resources/smart-start@1x.png');
 }
@@ -97,6 +101,10 @@
 
   .portfolio__card--hush {
     background-image: url('../resources/hush@2x.png');
+  }
+
+  .portfolio__card--markdown {
+    background-image: url('../resources/markdown@2x.png');
   }
 
   .portfolio__card--smart-start {
