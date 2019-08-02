@@ -17,7 +17,7 @@
         background-position: top center;
         background-size: contain;
         background-repeat: no-repeat;
-        box-shadow: 0 3px 16px rgba(0,0,0,.1);
+        box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1);
         margin-bottom: 5rem;
         padding-top: 56.2%; /* (Image Height / Image Width) * Container Width */
         position: relative;
@@ -89,8 +89,7 @@
   }
 }
 
-@media (min-device-pixel-ratio: 1.25),
-  (min-resolution: 200dpi) {
+@media (min-device-pixel-ratio: 1.25), (min-resolution: 200dpi) {
   .portfolio__card--component-bucket {
     background: url('../resources/component-bucket@2x.png');
   }

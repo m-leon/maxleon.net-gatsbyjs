@@ -7,7 +7,9 @@ export default (props) => (
       className={`portfolio__card ${props.bgClass}`}
       onClick={props.modalHandleOpen}
     >
-      <div className="portfolio__overlay"><span>{props.title}</span></div>
+      <div className="portfolio__overlay">
+        <span>{props.title}</span>
+      </div>
     </div>
     <PortfolioModal
       isOpen={props.modalIsOpen}

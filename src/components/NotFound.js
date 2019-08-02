@@ -10,6 +10,9 @@ const otherPages = [
 export default () => (
   <section>
     <h2>404</h2>
-    <p>Not found. Check out {otherPages[Math.floor(Math.random()*otherPages.length)]}</p>
+    <p>
+      Not found. Check out{' '}
+      {otherPages[Math.floor(Math.random() * otherPages.length)]}
+    </p>
   </section>
 );

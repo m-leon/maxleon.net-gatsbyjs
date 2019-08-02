@@ -2,7 +2,7 @@ import React from 'react';
 import PortfolioItem from './PortfolioItem';
 
 class Portfolio extends React.Component {
-  constructor () {
+  constructor() {
     super();
 
     this.state = {
@@ -30,7 +30,7 @@ class Portfolio extends React.Component {
     this.setState(newState);
   }
 
-  render () {
+  render() {
     return (
       <section className="portfolio">
         <h2 className="portfolio__title">My Work</h2>
@@ -42,8 +42,12 @@ class Portfolio extends React.Component {
             github="https://github.com/m-leon/hush"
             link="https://hush.maxleon.net"
             modalContent="I developed Hush as a secure alternative to Pastebin"
-            modalHandleOpen={() => { this.handleOpenModal('hushModalOpen') }}
-            modalHandleClose={() => { this.handleCloseModal('hushModalOpen') }}
+            modalHandleOpen={() => {
+              this.handleOpenModal('hushModalOpen');
+            }}
+            modalHandleClose={() => {
+              this.handleCloseModal('hushModalOpen');
+            }}
             modalIsOpen={this.state.hushModalOpen}
           />
           <PortfolioItem
@@ -53,8 +57,12 @@ class Portfolio extends React.Component {
             github="https://github.com/m-leon/markdown-react"
             link="https://mdr.netlify.com"
             modalContent="Markdown React is a simple React powered markdown editor online"
-            modalHandleOpen={() => { this.handleOpenModal('markdownModalOpen') }}
-            modalHandleClose={() => { this.handleCloseModal('markdownModalOpen') }}
+            modalHandleOpen={() => {
+              this.handleOpenModal('markdownModalOpen');
+            }}
+            modalHandleClose={() => {
+              this.handleCloseModal('markdownModalOpen');
+            }}
             modalIsOpen={this.state.markdownModalOpen}
           />
           <PortfolioItem
@@ -64,8 +72,12 @@ class Portfolio extends React.Component {
             github="https://github.com/m-leon/component-bucket"
             link="https://component-bucket.netlify.com"
             modalContent="A showcase of small components"
-            modalHandleOpen={() => { this.handleOpenModal('componentModalOpen') }}
-            modalHandleClose={() => { this.handleCloseModal('componentModalOpen') }}
+            modalHandleOpen={() => {
+              this.handleOpenModal('componentModalOpen');
+            }}
+            modalHandleClose={() => {
+              this.handleCloseModal('componentModalOpen');
+            }}
             modalIsOpen={this.state.componentModalOpen}
           />
           <PortfolioItem
@@ -74,8 +86,12 @@ class Portfolio extends React.Component {
             title="Yoovo"
             link="https://yoovo.co"
             modalContent="Yoovo is a web design startup that I helped found as a Senior Developer"
-            modalHandleOpen={() => { this.handleOpenModal('yoovoModalOpen') }}
-            modalHandleClose={() => { this.handleCloseModal('yoovoModalOpen') }}
+            modalHandleOpen={() => {
+              this.handleOpenModal('yoovoModalOpen');
+            }}
+            modalHandleClose={() => {
+              this.handleCloseModal('yoovoModalOpen');
+            }}
             modalIsOpen={this.state.yoovoModalOpen}
           />
           <PortfolioItem
@@ -83,8 +99,12 @@ class Portfolio extends React.Component {
             bgImage={require('../resources/smart-start@2x.png')}
             title="Smart Start Preschool"
             modalContent="Smart Start Preschool is a local preschool and child care company who's website I'm working on. Email me for more info."
-            modalHandleOpen={() => { this.handleOpenModal('smartModalOpen') }}
-            modalHandleClose={() => { this.handleCloseModal('smartModalOpen') }}
+            modalHandleOpen={() => {
+              this.handleOpenModal('smartModalOpen');
+            }}
+            modalHandleClose={() => {
+              this.handleCloseModal('smartModalOpen');
+            }}
             modalIsOpen={this.state.smartModalOpen}
           />
           <PortfolioItem
@@ -94,8 +114,12 @@ class Portfolio extends React.Component {
             github="https://github.com/m-leon/craigslist-redesign"
             link="https://craigslist-redesign.netlify.com/"
             modalContent="A conceptual redesign to bring Craigslist to the modern day design"
-            modalHandleOpen={() => { this.handleOpenModal('craigslistModalOpen') }}
-            modalHandleClose={() => { this.handleCloseModal('craigslistModalOpen') }}
+            modalHandleOpen={() => {
+              this.handleOpenModal('craigslistModalOpen');
+            }}
+            modalHandleClose={() => {
+              this.handleCloseModal('craigslistModalOpen');
+            }}
             modalIsOpen={this.state.craigslistModalOpen}
           />
         </div>

@@ -3,13 +3,13 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { AnimatedSwitch } from 'react-router-transition';
 
-import Contact    from '../components/Contact';
+import Contact from '../components/Contact';
 import ContactSuccess from '../components/ContactSuccess';
-import Header     from '../components/Header';
-import Main       from '../components/Main';
-import NotFound   from '../components/NotFound';
-import Portfolio  from '../components/Portfolio';
-import Skills     from '../components/Skills';
+import Header from '../components/Header';
+import Main from '../components/Main';
+import NotFound from '../components/NotFound';
+import Portfolio from '../components/Portfolio';
+import Skills from '../components/Skills';
 
 const AppRouter = () => (
   <BrowserRouter>
