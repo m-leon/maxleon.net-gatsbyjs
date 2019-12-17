@@ -21,13 +21,24 @@ export default (theme) => ({
     marginTop: theme.spacing(3),
     width: '100%'
   },
+  buttonWrapper: {
+    position: 'relative'
+  },
   button: {
-    backgroundColor: '#28282a',
+    backgroundColor: '#282828',
     color: theme.palette.secondary.contrastText,
     width: '100%',
     '&:hover': {
-      backgroundColor: '#000'
+      backgroundColor: 'black'
     }
+  },
+  buttonOverlay: {
+    color: theme.palette.primary.contrastText,
+    left: '50%',
+    marginLeft: -12,
+    marginTop: -12,
+    position: 'absolute',
+    top: '50%'
   },
   imagesWrapper: {
     position: 'relative'
