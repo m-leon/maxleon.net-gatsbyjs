@@ -55,7 +55,12 @@ const Contact = () => {
       <Grid container>
         <Grid item xs={12} md={6} className={classes.cardWrapper}>
           <div className={classes.card}>
-            <form className={classes.cardContent} onSubmit={handleSubmit}>
+            <form
+              className={classes.cardContent}
+              data-netlify="true"
+              name="contact"
+              onSubmit={handleSubmit}
+            >
               <Typography component="h2" gutterBottom variant="h2">
                 Contact Me
               </Typography>
