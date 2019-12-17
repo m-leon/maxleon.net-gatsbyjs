@@ -36,14 +36,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const form = e.target;
-
     setLoading(true);
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'form-name': form.getAttribute('name'),
+        'form-name': 'contact',
         ...state
       })
     })
@@ -61,17 +59,11 @@ const Contact = () => {
       <Grid container>
         <Grid item xs={12} md={6} className={classes.cardWrapper}>
           <div className={classes.card}>
-            <form
-              className={classes.cardContent}
-              data-netlify="true"
-              name="contact"
-              onSubmit={handleSubmit}
-            >
+            <form className={classes.cardContent} onSubmit={handleSubmit}>
               <Typography component="h2" gutterBottom variant="h2">
                 Contact Me
               </Typography>
               <Typography variant="h5">Let's Build Your Project</Typography>
-              <input type="hidden" name="form-name" value="contact" />
               <TextField
                 className={classes.textField}
                 name="name"
