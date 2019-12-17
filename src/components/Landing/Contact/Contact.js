@@ -113,7 +113,7 @@ const Contact = () => {
                   type="submit"
                   variant="contained"
                 >
-                  Message Submitted
+                  Message Sent
                 </Button>
               )}
               {!errored && !submitted && (
