@@ -28,18 +28,24 @@ const Contact = () => {
     message: ''
   });
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
+  const handleChange = (e) => {
+    const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const form = e.target;
+
     setLoading(true);
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...state })
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state
+      })
     })
       .then(() => {
         setSubmitted(true);
@@ -65,6 +71,7 @@ const Contact = () => {
                 Contact Me
               </Typography>
               <Typography variant="h5">Let's Build Your Project</Typography>
+              <input type="hidden" name="form-name" value="contact" />
               <TextField
                 className={classes.textField}
                 name="name"
