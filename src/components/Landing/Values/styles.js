@@ -21,6 +21,8 @@ export default (theme) => ({
     padding: theme.spacing(0, 5)
   },
   image: {
-    height: 55
+    height: 55,
+    marginBottom: theme.spacing(4),
+    marginTop: theme.spacing(4)
   }
 });
