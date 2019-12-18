@@ -8,6 +8,7 @@ import Hidden from '@material-ui/core/Hidden';
 import { Element } from 'react-scroll';
 import { makeStyles } from '@material-ui/core/styles';
 
+import AnalyticsContext from '../../AnalyticsContext';
 import Button from '../../modules/Button';
 import styles from './styles';
 import TextField from '../../modules/TextField';
@@ -18,6 +19,8 @@ const useStyles = makeStyles(styles);
 
 const Contact = () => {
   const classes = useStyles();
+
+  const analytics = React.useContext(AnalyticsContext);
 
   const [errored, setErrored] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
@@ -47,6 +50,14 @@ const Contact = () => {
     })
       .then(() => {
         setSubmitted(true);
+        if (!!analytics && !!analytics.track) {
+          analytics.track('Contact', {
+            event: 'submit',
+            category: 'form',
+            label: 'contact',
+            value: 1
+          });
+        }
       })
       .catch(() => {
         setErrored(true);
