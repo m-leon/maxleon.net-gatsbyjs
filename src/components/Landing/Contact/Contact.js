@@ -153,7 +153,7 @@ const Contact = () => {
         <Grid item xs={12} md={6} className={classes.imagesWrapper}>
           <Hidden smDown>
             <img
-              src="/static/handshake.jpg"
+              src="/static/personal_text.svg"
               alt="Connect"
               className={classes.image}
             />

@@ -23,7 +23,8 @@ const Hero = () => {
         variant="h5"
         className={classes.tagline}
       >
-        The goal isn't a website. The goal is to grow your business.
+        The goal isn't a website. <br />
+        The goal is to grow your business.
       </Typography>
       <Link to="contact" smooth={true} offset={-150} duration={500}>
         <Button

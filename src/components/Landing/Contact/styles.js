@@ -45,11 +45,11 @@ export default (theme) => ({
   },
   image: {
     bottom: 0,
-    left: -28,
+    left: 0,
     maxWidth: 600,
     position: 'absolute',
     right: 0,
-    top: -28,
+    top: -100,
     width: '100%'
   }
 });
