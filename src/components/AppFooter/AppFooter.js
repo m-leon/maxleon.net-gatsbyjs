@@ -26,17 +26,26 @@ const AppFooter = () => {
               spacing={2}
             >
               <Grid item className={classes.icons}>
-                <a href="mailto:max@maxleon.net" className={classes.icon}>
-                  <img src="/static/icons/social/at.svg" alt="Email" />
+                <a href="mailto:max@maxleon.net">
+                  <img
+                    src="/static/icons/social/at.svg"
+                    alt="Email"
+                    className={classes.icon}
+                  />
                 </a>
-                <a href="https://github.com/m-leon" className={classes.icon}>
-                  <img src="/static/icons/social/github.svg" alt="GitHub" />
+                <a href="https://github.com/m-leon">
+                  <img
+                    src="/static/icons/social/github.svg"
+                    alt="GitHub"
+                    className={classes.icon}
+                  />
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/max-leon-22398439/"
-                  className={classes.icon}
-                >
-                  <img src="/static/icons/social/linkedin.svg" alt="LinkedIn" />
+                <a href="https://www.linkedin.com/in/max-leon-22398439/">
+                  <img
+                    src="/static/icons/social/linkedin.svg"
+                    alt="LinkedIn"
+                    className={classes.icon}
+                  />
                 </a>
               </Grid>
               <Grid item>
