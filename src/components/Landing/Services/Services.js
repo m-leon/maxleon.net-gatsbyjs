@@ -27,10 +27,10 @@ const Services = () => {
           marked="center"
           variant="h4"
         >
-          Services
+          What I do
         </Typography>
         <Typography className={classes.subtitle} variant="h6">
-          What I do
+          Services
         </Typography>
         <div>
           <Grid container spacing={5}>

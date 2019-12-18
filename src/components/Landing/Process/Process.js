@@ -20,10 +20,10 @@ const Process = () => {
           marked="center"
           variant="h4"
         >
-          Process
+          How I Do It
         </Typography>
         <Typography className={classes.subtitle} variant="h6">
-          How I do it
+          Process
         </Typography>
         <div>
           <Grid container spacing={5}>

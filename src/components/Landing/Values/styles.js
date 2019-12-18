@@ -11,7 +11,7 @@ export default (theme) => ({
     marginTop: theme.spacing(10),
     position: 'relative'
   },
-  subtitle: {
+  title: {
     marginBottom: theme.spacing(10)
   },
   item: {

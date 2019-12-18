@@ -14,7 +14,12 @@ const Values = () => {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-        <Typography className={classes.subtitle} variant="h6">
+        <Typography
+          className={classes.title}
+          component="h2"
+          marked="center"
+          variant="h4"
+        >
           What You Need
         </Typography>
         <div>
