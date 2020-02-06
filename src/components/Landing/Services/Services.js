@@ -77,7 +77,7 @@ const Services = () => {
                   className={classes.image}
                 />
                 <Typography variant="h6" align="center">
-                  Improve SEO
+                  Search Engine Optimization
                 </Typography>
                 <Typography variant="h5">
                   Search engines provide sites the opportunity to reach new
