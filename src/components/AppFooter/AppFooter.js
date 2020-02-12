@@ -4,7 +4,10 @@ import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 
+import AtIcon from './at.svg';
 import Copyright from './Copyright';
+import GitHubIcon from './github.svg';
+import LinkedInIcon from './linkedin.svg';
 import styles from './styles';
 import Typography from '../modules/Typography';
 
@@ -27,22 +30,14 @@ const AppFooter = () => {
             >
               <Grid item className={classes.icons}>
                 <a href="mailto:max@maxleon.net">
-                  <img
-                    src="/static/icons/social/at.svg"
-                    alt="Email"
-                    className={classes.icon}
-                  />
+                  <img src={AtIcon} alt="Email" className={classes.icon} />
                 </a>
                 <a href="https://github.com/m-leon">
-                  <img
-                    src="/static/icons/social/github.svg"
-                    alt="GitHub"
-                    className={classes.icon}
-                  />
+                  <img src={GitHubIcon} alt="GitHub" className={classes.icon} />
                 </a>
                 <a href="https://www.linkedin.com/in/max-leon-22398439/">
                   <img
-                    src="/static/icons/social/linkedin.svg"
+                    src={LinkedInIcon}
                     alt="LinkedIn"
                     className={classes.icon}
                   />

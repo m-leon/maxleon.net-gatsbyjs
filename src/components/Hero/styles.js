@@ -1,7 +1,7 @@
 export default (theme) => ({
   background: {
     backgroundColor: '#a9a9a9',
-    backgroundImage: 'url(/static/shared_workspace.svg)'
+    backgroundImage: 'url(/shared_workspace.svg)'
   },
   button: {
     marginTop: theme.spacing(6),

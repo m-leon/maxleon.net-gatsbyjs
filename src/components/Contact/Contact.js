@@ -8,11 +8,12 @@ import Hidden from '@material-ui/core/Hidden';
 import { Element } from 'react-scroll';
 import { makeStyles } from '@material-ui/core/styles';
 
-import Button from '../../modules/Button';
+import Button from '../modules/Button';
+import PersonalTextSvg from './personal_text.svg';
 import styles from './styles';
-import TextField from '../../modules/TextField';
-import Typography from '../../modules/Typography';
-import { encode } from '../../../utils/form';
+import TextField from '../modules/TextField';
+import Typography from '../modules/Typography';
+import { encode } from '../../utils/form';
 
 const useStyles = makeStyles(styles);
 
@@ -142,7 +143,7 @@ const Contact = () => {
         <Grid item xs={12} md={6} className={classes.imagesWrapper}>
           <Hidden smDown>
             <img
-              src="/static/personal_text.svg"
+              src={PersonalTextSvg}
               alt="Connect"
               className={classes.image}
             />

@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../../modules/Button';
+import Button from '../modules/Button';
 import HeroWrapper from './HeroWrapper';
-import Typography from '../../modules/Typography';
+import Typography from '../modules/Typography';
 import { Link } from 'react-scroll';
 import { makeStyles } from '@material-ui/core/styles';
 

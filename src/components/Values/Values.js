@@ -3,12 +3,15 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
+import OnlineMarketingIcon from './online-marketing.svg';
+import ReportIcon from './report.svg';
 import styles from './styles';
-import Typography from '../../modules/Typography';
+import Typography from '../modules/Typography';
+import WebsitesIcon from './websites.svg';
 
 const useStyles = makeStyles(styles);
 
-const Process = () => {
+const Values = () => {
   const classes = useStyles();
 
   return (
@@ -20,64 +23,54 @@ const Process = () => {
           marked="center"
           variant="h4"
         >
-          How I Do It
-        </Typography>
-        <Typography className={classes.subtitle} variant="h6">
-          Process
+          What You Need
         </Typography>
         <div>
           <Grid container spacing={5}>
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
                 <img
-                  src="/static/icons/wireframe.svg"
-                  alt="Wireframe"
                   className={classes.image}
+                  src={WebsitesIcon}
+                  alt="Website"
                 />
                 <Typography align="center" variant="h6">
-                  <span className={classes.number}>1. </span>
-                  Plan &amp; Design
+                  Experience-Driven Engagement
                 </Typography>
                 <Typography variant="h5">
-                  Allows me to identify your needs. I'll deliver wireframes,
-                  mockups, and other designs. When you love it, we proceed to
-                  Build.
+                  Each second a user spends on a site increases their conversion
+                  likelihood. Retain your users by taking advantage the full
+                  power of the digital medium.
                 </Typography>
               </div>
             </Grid>
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
                 <img
-                  src="/static/icons/coding.svg"
-                  alt="Coding"
                   className={classes.image}
+                  src={OnlineMarketingIcon}
+                  alt="Audience"
                 />
-                <Typography variant="h6" align="center">
-                  <span className={classes.number}>2. </span>
-                  Build
+                <Typography align="center" variant="h6">
+                  Targeted Audience Reach
                 </Typography>
                 <Typography variant="h5">
-                  Make your dream a reality. I utilize the latest tools to
-                  quickly prototype, test, and deploy. You will be able to see
-                  my progress and provide feedback to make sure the result is
-                  just what you wanted.
+                  Increasing total traffic will provide your company with more
+                  conversions. You know your audience; I know how to get their
+                  attention.
                 </Typography>
               </div>
             </Grid>
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
-                <img
-                  src="/static/icons/ab-testing.svg"
-                  alt="AB Test"
-                  className={classes.image}
-                />
-                <Typography variant="h6" align="center">
-                  <span className={classes.number}>3. </span>
-                  Review &amp; Refine
+                <img className={classes.image} src={ReportIcon} alt="Results" />
+                <Typography align="center" variant="h6">
+                  Data-Driven Results
                 </Typography>
                 <Typography variant="h5">
-                  Your success is our success. My reports will give you access
-                  to the bigger picture behind the site.
+                  Optimize your site by identifying your user's goals. Let's
+                  create a conversation to refine and optimize with a proven
+                  method.
                 </Typography>
               </div>
             </Grid>
@@ -88,4 +81,4 @@ const Process = () => {
   );
 };
 
-export default Process;
+export default Values;

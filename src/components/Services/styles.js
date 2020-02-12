@@ -31,7 +31,6 @@ export default (theme) => ({
   },
   curvyLines: {
     pointerEvents: 'none',
-    position: 'absolute',
     opacity: 0.7,
     top: -180
   },

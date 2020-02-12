@@ -1,25 +1,45 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
+import Img from 'gatsby-image';
+import { graphql, useStaticQuery } from 'gatsby';
 import { Link } from 'react-scroll';
 import { makeStyles } from '@material-ui/core/styles';
 
-import Button from '../../modules/Button';
+import Button from '../modules/Button';
+import FlowIcon from './flow.svg';
+import MockupIcon from './mockup.svg';
+import SearchIcon from './search.svg';
 import styles from './styles';
-import Typography from '../../modules/Typography';
+import Typography from '../modules/Typography';
 
 const useStyles = makeStyles(styles);
 
+// TODO: Change to fluid query
+const query = graphql`
+  query {
+    file(relativePath: { eq: "curvy_lines.png" }) {
+      childImageSharp {
+        fixed(width: 1200) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`;
+
 const Services = () => {
   const classes = useStyles();
+  const data = useStaticQuery(query);
 
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-        <img
-          src="/static/curvy_lines.png"
+        <Img
+          fixed={data.file.childImageSharp.fixed}
           className={classes.curvyLines}
           alt="curvy lines"
+          style={{ position: 'absolute' }}
         />
         <Typography
           className={classes.title}
@@ -36,11 +56,7 @@ const Services = () => {
           <Grid container spacing={5}>
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
-                <img
-                  src="/static/icons/mockup.svg"
-                  alt="Mockup"
-                  className={classes.image}
-                />
+                <img src={MockupIcon} alt="Mockup" className={classes.image} />
                 <Typography align="center" variant="h6">
                   Website Development
                 </Typography>
@@ -54,11 +70,7 @@ const Services = () => {
             </Grid>
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
-                <img
-                  src="/static/icons/flow.svg"
-                  alt="Flow"
-                  className={classes.image}
-                />
+                <img src={FlowIcon} alt="Flow" className={classes.image} />
                 <Typography variant="h6" align="center">
                   App Development
                 </Typography>
@@ -71,11 +83,7 @@ const Services = () => {
             </Grid>
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
-                <img
-                  src="/static/icons/search.svg"
-                  alt="Search"
-                  className={classes.image}
-                />
+                <img src={SearchIcon} alt="Search" className={classes.image} />
                 <Typography variant="h6" align="center">
                   Search Engine Optimization
                 </Typography>

@@ -29,7 +29,6 @@ export default (theme) => ({
     zIndex: -2
   },
   arrowDown: {
-    position: 'absolute',
     bottom: theme.spacing(4)
   }
 });
